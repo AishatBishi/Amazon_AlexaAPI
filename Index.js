@@ -5,11 +5,7 @@ const Alexa = require("ask-sdk");
 const https = require("https");
 const axios = require('axios');
 
-
-
-
 const invocationName = "track my train";
-
 
 function getMemoryAttributes() {   const memoryAttributes = {
        "history":[],
@@ -268,10 +264,6 @@ function stripSpeak(str) {
  
  
  
- 
-
- 
- 
 const welcomeCardImg = { 
     smallImageUrl: "https://atlanta.urbanize.city/sites/default/files/styles/2018_article_gallery_image_2000w/public/2022-12/new%20MARTA%20rail%20cars%208.png?itok=ZqWJys9K", 
     largeImageUrl: "https://atlanta.urbanize.city/sites/default/files/styles/2018_article_gallery_image_2000w/public/2022-12/new%20MARTA%20rail%20cars%208.png?itok=ZqWJys9K" 
@@ -448,9 +440,6 @@ const RequestHistoryInterceptor = {
  
 }; 
  
- 
-
-
 
 // 4. Exports handler function and setup ===================================================
 const skillBuilder = Alexa.SkillBuilders.standard();
